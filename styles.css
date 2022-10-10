@@ -1,0 +1,77 @@
+* {
+  font-family: Asap, Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  left: 50px;
+}
+
+.game-container {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: 550px;
+  box-sizing: border-box;
+  width: 500px;
+  height: 730px;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.sky {
+  background-image: url(./img/fb-game-background.png);
+  width: 500px;
+  height: 580px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.ground {
+  background-image: url(./img/bottom-background.png);
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  top: 580px;
+  z-index: 4;
+}
+
+.bird {
+  background-image: url(./img/flappy-bird.png);
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  z-index: 2;
+}
+
+.obstacle {
+  background-image: url(./img/flappybird-pipe.png);
+  width: 60px;
+  height: 300px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+
+.topObstacle {
+  background-image: url(./img/flappybird-pipe.png);
+  transform: rotate(180deg);
+  width: 60px;
+  height: 300px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
